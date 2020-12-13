@@ -1,0 +1,19 @@
+
+FLASH 0x10010000 0x8000
+{
+    FLASH 0x10010000 0x8000
+    {
+       init.o (Init, +First)    
+      ;  __main.o(*)
+      ;* (Region$$Table)
+      ; __scatter*.o(*)
+      ; __dc*.o(*)
+       * (+RO)
+    }
+
+    SRAM 0x0   
+    {
+       vectors.o (Vect, +First)
+        * (+RW,+ZI)
+    }
+}

@@ -1,0 +1,25 @@
+
+FLASH 0x0 0x8000
+{
+    FLASH 0x0 0x8000
+    {
+        vectors.o (Vect, +First) 
+        * (+RO)
+    }
+
+    SRAM 0x200000   
+    {
+        * (+RW,+ZI)
+    }
+
+;    HEAP +0 UNINIT
+;    {
+;        heap.o (+ZI)
+;    }
+
+;    STACKS 0x00202000 UNINIT
+;    {
+;        stack.o (+ZI)
+;    }
+}
+
