@@ -1,9 +1,3 @@
-/*--------------------------------------------------
- * Copyright: Beijing Xinwei Telecomm Technology Co.,Ltd
- * Aim: main function
- * Author: Zhaoym
- * Created: 2008/03/26
-*/
 //------------------------------------------------------------------------------
 //         Headers
 //------------------------------------------------------------------------------
@@ -130,7 +124,7 @@ int main(void)
 	}
 	PIO_Set(&WDT);
 	
-	addr_temp=addr_temp+0x200;//跳过头部
+	addr_temp=addr_temp+0x200;//脤酶鹿媒脥路虏驴
 	LoadImage(addr_temp, length);
 	
 #if 0
